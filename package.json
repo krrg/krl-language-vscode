@@ -1,0 +1,26 @@
+{
+    "name": "krl",
+    "displayName": "krl-syntax",
+    "description": "KRL Language Highlighting",
+    "version": "0.0.1",
+    "publisher": "krrg",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "krl",
+            "aliases": ["KRL (Kinetic Rule Language)", "krl"],
+            "extensions": [".krl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "krl",
+            "scopeName": "source.krl",
+            "path": "./syntaxes/krl.tmLanguage"
+        }]
+    }
+}
